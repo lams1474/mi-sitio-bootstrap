@@ -1,0 +1,52 @@
+/* Fondo general y tipografía */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ff5733;
+}
+
+/* Navbar más separada */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* Sobrescribir botón primario de Bootstrap */
+.btn-primary {
+  background-color: #ff5733;
+  border-color: #ff5733;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e34a26;
+  border-color: #e34a26;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Formulario con sombra y bordes redondeados */
+.sombra-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Cards con transición suave */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* Media query propia: cambiar colores en pantallas pequeñas */
+@media (max-width: 576px) {
+  body {
+    background-color: #e3f2fd;   /* azul claro en móviles */
+  }
+
+  header {
+    background-color: #ffffff;
+  }
+}
